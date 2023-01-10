@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+</head>
+
+<body>
+    <script>
+        // // Task 1: Build a function-based console log message generator
+        // function consoleStyler(color, background, fontSize, txt) {
+        //     var message = "%c" + txt;
+        //     var style = `color: ${color};`
+        //     style += `background: ${background};`;
+        //     style += `font-size: ${fontSize};`;
+        //     console.log(message, style);
+        // }
+
+        // // Task 2: Build another console log message generator
+        // function celebrateStyler(reason) {
+        //     var fontStyle = "color: tomato; font-size: 50px";
+        //     if (reason == "birthday") {
+        //         console.log(`%cHappy birthday`, fontStyle);
+        //     }
+        //     else if (reason == "champions") {
+        //         console.log(`%cCongrats on the title!`, fontStyle);
+        //     }
+        //     else {
+        //         console.log(message, style);
+        //     }
+        // }
+
+        // // Task 3: Run both the consoleStyler and the celebrateStyler functions
+        // consoleStyler('#1d5c63', '#ede6db', '40px', 'Congrats!');
+        // celebrateStyler('birthday');
+
+        // // Task 4: Insert a congratulatory and custom message
+        // function styleAndCelebrate(color, background, fontSize, txt, reason) {
+        //     consoleStyler(color, background, fontSize, txt);
+        //     celebrateStyler(reason);
+        // }
+        // // Call styleAndCelebrate
+        // styleAndCelebrate('ef7c8e', 'fae8e0', '30px', 'You made it!', 'champions');
+        // Task 1
+        var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake'];
+
+        var logdairy = () => {
+            for (product of dairy) {
+                console.log(product);
+            }
+        }
+
+        logdairy();
+
+
+        // Task 2
+        const animal = {
+            canJump: true
+        };
+
+        const bird = Object.create(animal);
+
+        bird.canFly = true;
+        bird.hasFeathers = true;
+
+        function birdCan() {
+            for (ability of Object.keys(bird)) {
+                console.log(ability, ":", bird[ability]);
+            }
+        }
+
+        birdCan();
+
+
+        // Task 3
+        function animalCan() {
+            for (ability in bird) {
+                console.log(ability, ":", bird[ability]);
+            }
+        }
+
+        animalCan(); 
+    </script>
+</body>
+
+</html>
