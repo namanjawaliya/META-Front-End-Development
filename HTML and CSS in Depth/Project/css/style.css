@@ -1,0 +1,93 @@
+body{
+    background-color: #EDEFEE;
+    font-family: 'Markazi Text', serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+header > img{
+    display: block;
+    margin: auto;
+}
+
+nav{
+    background-color: hsl(0deg 0% 20%);
+    border-radius: 20px;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    padding: 20px;
+}
+
+li > a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+section{
+    display: flex;
+}
+
+.jumbotron{
+    background-image: url(../assets/jumbotron.png);
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    color:whitesmoke;
+}
+
+.jumbotron-content{
+    width: 70%;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+article{
+    flex: 1;
+}
+
+section > article{
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    line-height: 1.5;
+}
+
+.featured-img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: 20px;
+}
+
+footer{
+    display: flex;
+}
+
+footer div{
+    flex: 1;
+    padding: 20px;
+}
+
+.copyright{
+    float: right;
+}
